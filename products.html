@@ -1,0 +1,2288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <button id="nav-toggle" class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span class="hamburger"></span>
+    </button>
+    <div id="nav-overlay" class="nav-overlay" tabindex="-1" aria-hidden="true"></div>
+
+    <div class="page-layout">
+
+        <!--NAV-->
+        <nav class="nav-side-bar">
+            <div class="nav-content">
+                <div class="logo">
+                    <img src="images/web-logo.png">
+                    <div class="logo-text">
+                        <h2><span>D</span>ABET</h2>
+                        <p><span>M</span>ETAL <span>T</span>RADING</p>
+                    </div>
+                    
+                </div>
+
+                <ul class="nav-links">
+
+                    <li><a href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="24px"><path d="M160-120v-480l320-240 320 240v480H560v-280H400v280H160Z"/></svg>
+                        <span>HOME</span>
+                    </a></li>
+
+                    <li><a href="products.html" class="active">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="24px"><path d="M841-518v318q0 33-23.5 56.5T761-120H201q-33 0-56.5-23.5T121-200v-318q-23-21-35.5-54t-.5-72l42-136q8-26 28.5-43t47.5-17h556q27 0 47 16.5t29 43.5l42 136q12 39-.5 71T841-518Zm-272-42q27 0 41-18.5t11-41.5l-22-140h-78v148q0 21 14 36.5t34 15.5Zm-180 0q23 0 37.5-15.5T441-612v-148h-78l-22 140q-4 24 10.5 42t37.5 18Zm-178 0q18 0 31.5-13t16.5-33l22-154h-78l-40 134q-6 20 6.5 43t41.5 23Zm540 0q29 0 42-23t6-43l-42-134h-76l22 154q3 20 16.5 33t31.5 13Z"/></svg>
+                        <span>PRODUCTS</span>
+                    </a></li>
+
+                    <li><a href="contacts.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="24px"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12Z"/></svg>
+                        <span>CONTACTS</span>
+                    </a></li>
+
+                    <li><a href="about-us.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg>                        
+                        <span>ABOUT</span>
+                    </a></li>
+
+                    <li><a href="cart.html">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM208-800h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Z"/></svg>
+                        <span>Cart</span>
+                        <span class="cart-counter">0</span>
+                    </a></li>
+
+                </ul>
+
+                <div class="nav-social">
+
+                    <a href="">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 12.05C19.9813 10.5255 19.5273 9.03809 18.6915 7.76295C17.8557 6.48781 16.673 5.47804 15.2826 4.85257C13.8921 4.2271 12.3519 4.01198 10.8433 4.23253C9.33473 4.45309 7.92057 5.10013 6.7674 6.09748C5.61422 7.09482 4.77005 8.40092 4.3343 9.86195C3.89856 11.323 3.88938 12.8781 4.30786 14.3442C4.72634 15.8103 5.55504 17.1262 6.69637 18.1371C7.83769 19.148 9.24412 19.8117 10.75 20.05V14.38H8.75001V12.05H10.75V10.28C10.7037 9.86846 10.7483 9.45175 10.8807 9.05931C11.0131 8.66687 11.23 8.30827 11.5161 8.00882C11.8022 7.70936 12.1505 7.47635 12.5365 7.32624C12.9225 7.17612 13.3368 7.11255 13.75 7.14003C14.3498 7.14824 14.9482 7.20173 15.54 7.30003V9.30003H14.54C14.3676 9.27828 14.1924 9.29556 14.0276 9.35059C13.8627 9.40562 13.7123 9.49699 13.5875 9.61795C13.4627 9.73891 13.3667 9.88637 13.3066 10.0494C13.2464 10.2125 13.2237 10.387 13.24 10.56V12.07H15.46L15.1 14.4H13.25V20C15.1399 19.7011 16.8601 18.7347 18.0985 17.2761C19.3369 15.8175 20.0115 13.9634 20 12.05Z"/></svg>
+                    </a>
+
+                    <a href="">
+
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 11C3 7.22876 3 5.34315 4.17157 4.17157C5.34315 3 7.22876 3 11 3H13C16.7712 3 18.6569 3 19.8284 4.17157C21 5.34315 21 7.22876 21 11V13C21 16.7712 21 18.6569 19.8284 19.8284C18.6569 21 16.7712 21 13 21H11C7.22876 21 5.34315 21 4.17157 19.8284C3 18.6569 3 16.7712 3 13V11ZM18 7.5C18 8.32843 17.3284 9 16.5 9C15.6716 9 15 8.32843 15 7.5C15 6.67157 15.6716 6 16.5 6C17.3284 6 18 6.67157 18 7.5ZM14 13C14 14.1046 13.1046 15 12 15C10.8954 15 10 14.1046 10 13C10 11.8954 10.8954 11 12 11C13.1046 11 14 11.8954 14 13ZM16 13C16 15.2091 14.2091 17 12 17C9.79086 17 8 15.2091 8 13C8 10.7909 9.79086 9 12 9C14.2091 9 16 10.7909 16 13Z"/></svg>
+                    </a>
+
+
+                    <a href="">
+                        <svg viewBox="0 0 24 24" id="tiktok" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg"><path id="primary" d="M21,7V9a1,1,0,0,1-1,1,8,8,0,0,1-4-1.08V15.5A6.5,6.5,0,1,1,6.53,9.72a1,1,0,0,1,1.47.9v2.52a.92.92,0,0,1-.28.62,2.49,2.49,0,0,0,2,4.23A2.61,2.61,0,0,0,12,15.35V3a1,1,0,0,1,1-1h2.11a1,1,0,0,1,1,.83A4,4,0,0,0,20,6,1,1,0,0,1,21,7Z"></path></svg>                
+                    </a>
+
+                </div>
+
+            </div>
+        </nav>
+
+        <!--HOME PAGE-->
+        <main class="hero">
+
+            <section class="categories">
+
+                <h1>CATEGORIES</h1>
+
+                <div class="categories-content">
+                    <div class="categories-container" id="categories-container">
+
+                    </div>
+
+                    <div class="pagination">
+                        <button id="prev-button"><i class="fa-solid fa-angle-left"></i></button>
+                        <button id="next-button"><i class="fa-solid fa-angle-right"></i></button>
+
+                    </div>
+
+                </div>
+                
+            </section>
+
+            <section class="section4" id="electrical">
+                
+                <div class="hero-content4" id="featured-products">
+
+                    <h1>ELECTRICAL SUPPLIES</h1>
+                    <p>ELECTRICAL ESSENTIALS</p>
+
+                    <div class="products-items">
+
+                        <!--PRODUCT 1-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/1-1.png"
+                                data-name="Royu 1-Gang Switch Set – Classic (WH501)" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/1-2.png, images/1-3.png, images/1-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">                              <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>             
+
+                        <!--PRODUCT 2-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/1-1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/1-2.png, images/1-3.png, images/2-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 3-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 4-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 5-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 6-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 7-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+                        
+                        <!--PRODUCT 8-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 9-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 10-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>         
+ 
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="section4" id="door-hardware">
+                
+                <div class="hero-content4" id="featured-products">
+
+                    <h1>DOOR HARDWARE & SECURITY</h1>
+                    <p>DOOR HARDWARE ESSENTIALS</p>
+
+                    <div class="products-items">
+
+                        <!--PRODUCT 1-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/1-1.png, images/1-2.png, images/1-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>             
+
+                        <!--PRODUCT 2-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/2.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/2-1.png, images/2-2.png, images/2-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 3-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 4-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 5-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 6-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 7-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+                        
+                        <!--PRODUCT 8-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 9-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 10-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>         
+ 
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="section4" id="paints-coating">
+                
+                <div class="hero-content4" id="featured-products">
+
+                    <h1>PAINTS AND COATINGS</h1>
+                    <p>PAINTS ESSENTIALS</p>
+
+                    <div class="products-items">
+
+                        <!--PRODUCT 1-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/1-1.png, images/1-2.png, images/1-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>             
+
+                        <!--PRODUCT 2-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/2.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/2-1.png, images/2-2.png, images/2-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 3-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 4-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 5-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 6-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 7-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+                        
+                        <!--PRODUCT 8-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 9-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 10-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>         
+ 
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="section4" id="paint-tools">
+                
+                <div class="hero-content4" id="featured-products">
+
+                    <h1>PAINTING TOOLS</h1>
+                    <p>PAINTING TOOLS ESSENTIALS</p>
+
+                    <div class="products-items">
+
+                        <!--PRODUCT 1-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/1-1.png, images/1-2.png, images/1-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>             
+
+                        <!--PRODUCT 2-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/2.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/2-1.png, images/2-2.png, images/2-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 3-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 4-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 5-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 6-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 7-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+                        
+                        <!--PRODUCT 8-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 9-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 10-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>         
+ 
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="section4" id="chemicals-adhesive">
+                
+                <div class="hero-content4" id="featured-products">
+
+                    <h1>CHEMICALS AND ADHESIVE</h1>
+                    <p>CHEMICALS ESSENTIALS</p>
+
+                    <div class="products-items">
+
+                        <!--PRODUCT 1-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/1-1.png, images/1-2.png, images/1-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>             
+
+                        <!--PRODUCT 2-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/2.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/2-1.png, images/2-2.png, images/2-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 3-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 4-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 5-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 6-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 7-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+                        
+                        <!--PRODUCT 8-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 9-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 10-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>         
+ 
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="section4" id="pvc-conduits">
+                
+                <div class="hero-content4" id="featured-products">
+
+                    <h1>PVC & ELECTRICAL CONDUITS</h1>
+                    <p>PVC & CONDUITS ESSENTIALS</p>
+
+                    <div class="products-items">
+
+                        <!--PRODUCT 1-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/1-1.png, images/1-2.png, images/1-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>             
+
+                        <!--PRODUCT 2-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/2.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/2-1.png, images/2-2.png, images/2-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 3-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 4-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 5-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 6-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 7-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+                        
+                        <!--PRODUCT 8-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 9-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 10-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>         
+ 
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="section4" id="abrasives">
+                
+                <div class="hero-content4" id="featured-products">
+
+                    <h1>ABRASIVES</h1>
+                    <p>ABRASIVES ESSENTIALS</p>
+
+                    <div class="products-items">
+
+                        <!--PRODUCT 1-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/1-1.png, images/1-2.png, images/1-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>             
+
+                        <!--PRODUCT 2-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/2.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/2-1.png, images/2-2.png, images/2-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 3-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 4-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 5-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 6-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 7-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+                        
+                        <!--PRODUCT 8-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 9-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>     
+
+                        <!--PRODUCT 10-->
+                        <div class="products">
+                            <div class="product-image"><img src="images/p1.png"
+                                data-name="SEKU PAINT BLACK" 
+                                data-price="₱ 4.12" 
+                                data-description="Enhance and protect your surfaces with SEKU Premium Gloss Paint. This high-quality, versatile paint is designed to deliver a deep, professional Jet Black finish with exceptional durability. Whether you are working on a home DIY project or industrial touch-ups, SEKU provides the coverage and consistency you need."
+                                data-images="images/17-1.png, images/17-2.png, images/17-3.png"> 
+                            </div>
+
+                            <h3 class="product-name">SEKU PAINT BLACK</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                                <i class="fa-solid fa-star"></i>                            
+                            </div>
+
+                            <h2 class="price"> ₱ 4.12</h2>
+
+                            <div class="products-button">
+                                <button class="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                
+                            </div>
+                            
+                        </div>         
+ 
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="product-desc-modal">
+
+                <div class="modal-overlay" id="modal-overlay">
+
+                    <div class="modal">
+
+                        <button class="modal-close" id="modal-close">×</button>
+
+                        <div class="modal-body">
+
+                            <div class="modal-image-wrap">
+                                <div class="modal-main-image"><img src="" alt="" id="modal-image"></div>
+
+                                <div class="modal-image-small">
+                                    <img src="" alt="">
+                                    <img src="" alt="">
+                                    <img src="" alt="">
+                                </div>
+
+                            </div>
+
+                            <div class="modal-info">
+
+                                <h3 id="modal-name">Product Name</h3>
+
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+
+                                <p class="modal-desc" id="modal-desc">Description</p>
+                                
+                                <div class="quantity">
+                                    <label for="quantity">Quantity:</label>
+                                    <input type="number"  id="modal-quantity" min="1" value="1">
+                                </div>
+                                
+
+                                <p class="modal-price" id="modal-price">Price</p>
+
+                                <div class="modal-actions">
+                                    <button id="add-to-cart" class="btn"><i class="fa-solid fa-basket-shopping"></i>Add to Cart</button>
+                                    <button id="buy-now" class="btn primary">Buy Now</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="why-choose-us">
+                
+                <h1>WHY CHOOSE US?</h1>
+
+                <div class="why-choose-us-content">
+
+                    <div class="why-choose-us-info">
+                        <img src="images/truck-icon.png">
+                        <h1>FAST LOGISTICS</h1>
+                        <p>We ensure your hardware and metal supplies are delivered on time, every time.</p>
+                    </div>
+
+                    <div class="why-choose-us-info">
+                        <img src="images/shield-icon.png">
+                        <h1>QUALITY ASSURED</h1>
+                        <p>Sourced from trusted manufacturers to guarantee the durability of every tool and material.</p>
+                    </div>
+
+                    <div class="why-choose-us-info">
+                        <img src="images/handshake-icon.png">
+                        <h1>BEST VALUE</h1>
+                        <p>Competitive pricing for bulk orders and retail, ensuring you get the best deal for your projects.</p>
+                    </div>
+                    
+                </div>
+
+            </section>
+
+            <section class="footer">
+                <div class="footer-content">
+
+                    <div class="footer-text">
+                        <ul>
+                            <li class="footer-text-header">HELP CENTER</li>
+                            <li><a href="how-to-shop.html">How to Shop</a></li>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="return-refund.html">Return and Refund</a></li>
+                            <li><a href="term-of-service.html">Term of service</a></li>
+                        </ul>
+
+                        <ul>
+                            <li class="footer-text-header">CONNECT WITH US</li>
+                            <li><a href="">Facebook</a></li>
+                            <li><a href="">Tiktok</a></li>
+                            <li><a href="">Instagram</a></li>
+                        </ul>
+
+                        <ul>
+                            <li class="footer-text-header">COMPANY</li>
+                            <li><a href="about-us.html">About us</a></li>
+                            <li><a href="why-shop.html">Why Shop at DABET METAL TRADING</a></li>
+                            <li><a href="contacts.html">Contact Us</a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+    
+<script src="script.js"></script>
+</body>
+</html>
